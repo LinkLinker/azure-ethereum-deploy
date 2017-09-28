@@ -135,7 +135,7 @@
             "defaultValue": "mas"
         },
         "baseUrl": {
-            "defaultValue": "https://gallery.azure.com/artifact/20151001/microsoft-azure-blockchain.azure-blockchain-serviceethereum-consortium-blockchain.1.0.11/Artifacts",
+            "defaultValue": "https://raw.githubusercontent.com/LinkLinker/azure-ethereum-deploy/master",
             "type": "String",
             "metadata": {
                 "description": "The base URL for dependent assets",
@@ -152,7 +152,7 @@
         "apiVersionAvailabilitySets": "2016-03-30",
         "apiVersionNetworkSecurityGroups": "2015-06-15",
         "apiVersionNetworkInterfaces": "2015-06-15",
-        "apiVersionVirtualMachines": "2016-03-30",
+        "apiVersionVirtualMachines": "2015-06-15",
         "apiVersionVirtualNetworks": "2015-06-15",
         "namingInfix": "[toLower(substring(concat(parameters('namePrefix'), uniqueString(resourceGroup().id)), 0, 9))]",
         "availabilitySetName": "[concat(variables('namingInfix'), 'AvSet')]",
