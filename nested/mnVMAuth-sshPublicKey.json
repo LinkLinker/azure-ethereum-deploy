@@ -63,6 +63,7 @@
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2015-06-15",
       "name": "[parameters('mnStorageAcctNames')[copyIndex()]]",
       "location": "[parameters('location')]",
       "copy": {
@@ -77,6 +78,7 @@
     },
     {
       "type": "Microsoft.Network/networkInterfaces",
+      "apiVersion": "2015-06-15",
       "name": "[concat(parameters('mnNICPrefix'), copyindex())]",
       "location": "[parameters('location')]",
       "copy": {
@@ -99,6 +101,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines",
+      "apiVersion": "2015-06-15",
       "name": "[concat(parameters('mnVMNamePrefix'), copyIndex())]",
       "location": "[parameters('location')]",
       "copy": {

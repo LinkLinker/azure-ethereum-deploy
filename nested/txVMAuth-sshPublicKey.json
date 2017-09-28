@@ -72,6 +72,7 @@
   "resources": [
     {
       "type": "Microsoft.Network/networkInterfaces",
+      "apiVersion": "2015-06-15",
       "name": "[concat(parameters('txNIPrefix'), copyindex())]",
       "location": "[parameters('location')]",
       "copy": {
@@ -104,6 +105,7 @@
     },
     {
       "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2015-06-15",
       "name": "[parameters('txStorageAcctName')]",
       "location": "[parameters('location')]",
       "sku": {
@@ -114,6 +116,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines",
+      "apiVersion": "2015-06-15",
       "name": "[concat(parameters('txVMNamePrefix'), copyIndex())]",
       "location": "[parameters('location')]",
       "copy": {
