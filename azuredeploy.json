@@ -144,6 +144,8 @@
         }
     },
     "variables": {
+        "location": "[resourceGroup().location]",
+        "artifactsLocationURL": "https://raw.githubusercontent.com/LinkLinker/azure-ethereum-deploy/master/",
         "apiVersionDeployments": "2016-02-01",
         "apiVersionResourcesDeployments": "2015-01-01",
         "apiVersionStorageAccounts": "2016-01-01",
